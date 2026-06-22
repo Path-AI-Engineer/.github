@@ -6,7 +6,7 @@ Bienvenido a **Path-AI-Engineer**, una organización creada para documentar y co
 
 Esta organización no es solo una colección de repositorios.
 
-Es una ruta progresiva de construcción técnica, investigación aplicada, producto, cloud, MLOps, RAG, agentes, computación cuántica y arquitectura de plataforma.
+Es una ruta progresiva de construcción técnica, investigación aplicada, producto, cloud, MLOps, RAG, agentes, computación cuántica, arquitectura de plataforma y despliegue avanzado cuando el sistema realmente lo exige.
 
 ---
 
@@ -29,6 +29,7 @@ Sé monitorearlos.
 Sé optimizarlos.
 Sé construir RAG y agentes.
 Sé trabajar con cloud y MLOps.
+Sé comparar Cloud Run, Kubernetes y plataformas administradas.
 Sé entrar a computación cuántica aplicada.
 Sé diseñar una empresa quantum-first.
 Sé profundizar en Quantum AI avanzado.
@@ -144,6 +145,8 @@ Puede incluir:
 * Labs.
 * Métricas.
 * Deploy.
+* Cloud architecture.
+* Kubernetes cuando exista una razón real de plataforma.
 
 ## Módulo
 
@@ -200,10 +203,12 @@ Ejemplos:
 * QAOA.
 * VQE.
 * Error Correction.
+* Kubernetes Platform Deployment.
+* Kubernetes Job Orchestration.
 
 ## cloud-labs
 
-Laboratorios de traducción cloud.
+Laboratorios de traducción cloud y arquitectura.
 
 Ejemplos:
 
@@ -211,6 +216,9 @@ Ejemplos:
 * Model Artifact → AWS S3.
 * Model Artifact → Azure Blob Storage.
 * Render → Cloud Run.
+* Cloud Run → Kubernetes / GKE.
+* GCP → AWS equivalent.
+* GCP → Azure equivalent.
 * Qiskit → IBM Quantum.
 * Qiskit → Amazon Braket.
 * Qiskit → Azure Quantum.
@@ -228,30 +236,68 @@ Ejemplos:
 * Roadmap.
 * ROI.
 * Product Strategy.
+* Kubernetes vs Serverless Platform Strategy.
+* Managed AI Platforms Decision.
 
-## research-labs
+---
 
-Laboratorios de investigación aplicada.
+# ☁️ Kubernetes dentro de la ruta
 
-Ejemplos:
+Kubernetes no se estudia al inicio como tema aislado.
 
-* Paper reading.
-* Topic summary.
-* Concept notes.
-* Benchmark reports.
-* Research documentation.
+Kubernetes aparece cuando ya existe una razón real:
 
-## docs-labs
+* Múltiples servicios.
+* Frontend separado.
+* Backend separado.
+* Servicios ML.
+* Servicios RAG.
+* Monitoreo.
+* Workers.
+* Jobs.
+* Ejecución de tareas.
+* Plataforma modular.
+* Necesidad de escalado.
+* Comparación con Cloud Run.
+* Arquitectura multi-cloud.
+* Pensamiento de plataforma.
 
-Laboratorios de documentación.
+Regla:
 
-Ejemplos:
+```txt
+Primero aprendo FastAPI.
+Luego aprendo Docker.
+Luego aprendo CI/CD.
+Luego aprendo Cloud Run.
+Luego aprendo MLOps.
+Luego aprendo plataforma.
+Después uso Kubernetes para entender despliegue avanzado, orquestación y control.
+```
 
-* README storytelling.
-* API docs.
-* Roadmap docs.
-* Technical migration docs.
-* Visual notes.
+Kubernetes aparece con fuerza en cuatro puntos principales:
+
+```txt
+Proyecto 07 → retail-ai-mlops-platform
+Uso: desplegar plataforma IA multi-servicio.
+
+Proyecto 13 → hybrid-ai-quantum-workflow-platform
+Uso: orquestar jobs, workers y workflows clásico-cuánticos.
+
+Proyecto 19 → quantum-first-platform-roadmap
+Uso: decidir estratégicamente cuándo usar Kubernetes, serverless o managed AI platforms.
+
+Proyecto 25 → quantum-ai-platform-prototype
+Uso: desplegar una plataforma AI + Quantum modular avanzada.
+```
+
+Frase guía:
+
+```txt
+Cloud Run = velocidad y simplicidad.
+Kubernetes = control, orquestación, escalado y plataforma.
+Vertex AI / Managed AI Platforms = MLOps administrado.
+La decisión correcta depende del sistema, no de la moda.
+```
 
 ---
 
@@ -281,7 +327,7 @@ AI
 Construir sistemas reales de IA:
 
 ```txt
-datos → features → modelo → API → frontend → deploy → monitoreo → retraining → RAG/agentes → optimización
+datos → features → modelo → API → frontend → deploy → monitoreo → retraining → RAG/agentes → optimización → cloud architecture → plataforma
 ```
 
 Este plan forma la base como **AI Engineer / Machine Learning Engineer**.
@@ -290,15 +336,15 @@ Este plan forma la base como **AI Engineer / Machine Learning Engineer**.
 
 ## Proyectos
 
-| Proyecto | Nombre                                       | Enfoque                                  |
-| -------- | -------------------------------------------- | ---------------------------------------- |
-| 01       | `retail-demand-prediction-api`               | Predicción de demanda retail con FastAPI |
-| 02       | `sales-forecasting-mlops-starter`            | Forecasting de ventas con Docker y CI/CD |
-| 03       | `cloud-retail-ml-pipeline`                   | Pipeline ML retail usando cloud          |
-| 04       | `retail-model-monitoring-system`             | Monitoreo, drift y retraining            |
-| 05       | `intelligent-document-analyst-rag-langgraph` | RAG, documentos, agentes y tools         |
-| 06       | `ai-cost-latency-optimizer`                  | Costos y latencia de servicios IA        |
-| 07       | `retail-ai-mlops-platform`                   | Plataforma final de IA retail            |
+| Proyecto | Nombre                                       | Enfoque                                                         |
+| -------- | -------------------------------------------- | --------------------------------------------------------------- |
+| 01       | `retail-demand-prediction-api`               | Predicción de demanda retail con FastAPI                        |
+| 02       | `sales-forecasting-mlops-starter`            | Forecasting de ventas con Docker y CI/CD                        |
+| 03       | `cloud-retail-ml-pipeline`                   | Pipeline ML retail usando cloud                                 |
+| 04       | `retail-model-monitoring-system`             | Monitoreo, drift y retraining                                   |
+| 05       | `intelligent-document-analyst-rag-langgraph` | RAG, documentos, agentes y tools                                |
+| 06       | `ai-cost-latency-optimizer`                  | Costos y latencia de servicios IA                               |
+| 07       | `retail-ai-mlops-platform`                   | Plataforma retail AI multi-servicio con MLOps, RAG y Kubernetes |
 
 ---
 
@@ -347,37 +393,53 @@ Este plan forma la base como **AI Engineer / Machine Learning Engineer**.
 * GitHub.
 * LinkedIn.
 * Storytelling técnico.
+* Cloud Architecture.
+* Kubernetes básico-intermedio aplicado a plataformas IA.
+* Pods.
+* Deployments.
+* Services.
+* Ingress.
+* ConfigMaps.
+* Secrets.
+* Namespaces.
+* Health Checks.
+* Readiness Probes.
+* Liveness Probes.
+* Escalado básico.
+* Comparación Cloud Run vs Kubernetes / GKE.
 
 ---
 
 ## Nivel esperado al terminar Plan 1
 
-| Área                        |  Nivel |
-| --------------------------- | -----: |
-| Python aplicado a IA        |   9/10 |
-| SQL aplicado a ML           |   8/10 |
-| Pandas / NumPy              | 8.5/10 |
-| Scikit-learn                | 8.5/10 |
-| Feature Engineering         |   8/10 |
-| Baselines y métricas        |   9/10 |
-| Model Comparison            | 8.5/10 |
-| Hyperparameter Tuning       | 7.5/10 |
-| Forecasting / Time Series   |   8/10 |
-| FastAPI                     | 8.5/10 |
-| Testing / Logging           |   8/10 |
-| Docker / CI/CD              | 7.5/10 |
-| Render Deploy               |   9/10 |
-| GCP / BigQuery / Cloud Run  | 7.5/10 |
-| MLflow                      |   8/10 |
-| MLOps / Drift / Retraining  |   8/10 |
-| PyTorch / Deep Learning     |   7/10 |
-| Hugging Face / Transformers | 7.5/10 |
-| RAG                         | 8.5/10 |
-| LangGraph / Agents          |   8/10 |
-| Guardrails / LLM Evaluation | 7.5/10 |
-| Costos / Latencia           |   8/10 |
-| Frontend para IA            |   8/10 |
-| Storytelling técnico        |   9/10 |
+| Área                                 |  Nivel |
+| ------------------------------------ | -----: |
+| Python aplicado a IA                 |   9/10 |
+| SQL aplicado a ML                    |   8/10 |
+| Pandas / NumPy                       | 8.5/10 |
+| Scikit-learn                         | 8.5/10 |
+| Feature Engineering                  |   8/10 |
+| Baselines y métricas                 |   9/10 |
+| Model Comparison                     | 8.5/10 |
+| Hyperparameter Tuning                | 7.5/10 |
+| Forecasting / Time Series            |   8/10 |
+| FastAPI                              | 8.5/10 |
+| Testing / Logging                    |   8/10 |
+| Docker / CI/CD                       | 7.5/10 |
+| Render Deploy                        |   9/10 |
+| GCP / BigQuery / Cloud Run           | 7.5/10 |
+| MLflow                               |   8/10 |
+| MLOps / Drift / Retraining           |   8/10 |
+| PyTorch / Deep Learning              |   7/10 |
+| Hugging Face / Transformers          | 7.5/10 |
+| RAG                                  | 8.5/10 |
+| LangGraph / Agents                   |   8/10 |
+| Guardrails / LLM Evaluation          | 7.5/10 |
+| Costos / Latencia                    |   8/10 |
+| Frontend para IA                     |   8/10 |
+| Cloud Architecture                   |   8/10 |
+| Kubernetes aplicado a plataformas IA | 7.5/10 |
+| Storytelling técnico                 |   9/10 |
 
 ---
 
@@ -405,19 +467,20 @@ Este plan busca construir base práctica en:
 * Quantum optimization.
 * Post-quantum security.
 * Sistemas híbridos clásico-cuánticos.
+* Orquestación de workflows híbridos cuando el sistema crece.
 
 ---
 
 ## Proyectos
 
-| Proyecto | Nombre                                | Enfoque                                  |
-| -------- | ------------------------------------- | ---------------------------------------- |
-| 08       | `quantum-algorithms-playground`       | Fundamentos cuánticos visuales           |
-| 09       | `quantum-cloud-abstraction-layer`     | Abstracción de backends cuánticos        |
-| 10       | `quantum-optimization-lab`            | Optimización clásica vs quantum-inspired |
-| 11       | `post-quantum-security-scanner`       | Riesgo criptográfico post-cuántico       |
-| 12       | `quantum-ai-research-assistant`       | RAG para papers y documentación cuántica |
-| 13       | `hybrid-ai-quantum-workflow-platform` | Plataforma híbrida clásico-cuántica      |
+| Proyecto | Nombre                                | Enfoque                                             |
+| -------- | ------------------------------------- | --------------------------------------------------- |
+| 08       | `quantum-algorithms-playground`       | Fundamentos cuánticos visuales                      |
+| 09       | `quantum-cloud-abstraction-layer`     | Abstracción de backends cuánticos                   |
+| 10       | `quantum-optimization-lab`            | Optimización clásica vs quantum-inspired            |
+| 11       | `post-quantum-security-scanner`       | Riesgo criptográfico post-cuántico                  |
+| 12       | `quantum-ai-research-assistant`       | RAG para papers y documentación cuántica            |
+| 13       | `hybrid-ai-quantum-workflow-platform` | Plataforma híbrida con jobs, workers y orquestación |
 
 ---
 
@@ -452,28 +515,34 @@ Este plan busca construir base práctica en:
 * Post-Quantum Cryptography.
 * Hybrid Classical-Quantum Systems.
 * Quantum Cloud Abstraction.
+* Workflow orchestration.
+* Job orchestration.
+* Workers.
+* Kubernetes Jobs conceptuales.
+* Cloud/Kubernetes para workflows híbridos.
 
 ---
 
 ## Nivel esperado al terminar Plan 2
 
-| Área                             |  Nivel |
-| -------------------------------- | -----: |
-| Fundamentos cuánticos            | 7.5/10 |
-| Qubits / Gates / Medición        |   8/10 |
-| Qiskit                           |   8/10 |
-| Cirq                             | 6.5/10 |
-| IBM Quantum                      | 6.5/10 |
-| Amazon Braket                    | 6.5/10 |
-| Azure Quantum                    | 6.5/10 |
-| Grover / Shor conceptual         |   7/10 |
-| QAOA                             | 7.5/10 |
-| VQE                              | 6.5/10 |
-| Quantum Optimization             |   8/10 |
-| Quantum Machine Learning         | 6.5/10 |
-| Quantum Cloud Abstraction        |   8/10 |
-| Post-Quantum Security            |   8/10 |
-| Hybrid Classical-Quantum Systems |   8/10 |
+| Área                                    |  Nivel |
+| --------------------------------------- | -----: |
+| Fundamentos cuánticos                   | 7.5/10 |
+| Qubits / Gates / Medición               |   8/10 |
+| Qiskit                                  |   8/10 |
+| Cirq                                    | 6.5/10 |
+| IBM Quantum                             | 6.5/10 |
+| Amazon Braket                           | 6.5/10 |
+| Azure Quantum                           | 6.5/10 |
+| Grover / Shor conceptual                |   7/10 |
+| QAOA                                    | 7.5/10 |
+| VQE                                     | 6.5/10 |
+| Quantum Optimization                    |   8/10 |
+| Quantum Machine Learning                | 6.5/10 |
+| Quantum Cloud Abstraction               |   8/10 |
+| Post-Quantum Security                   |   8/10 |
+| Hybrid Classical-Quantum Systems        |   8/10 |
+| Workflow / Job Orchestration conceptual | 7.5/10 |
 
 ---
 
@@ -496,23 +565,24 @@ Construir la visión, estrategia, producto y plataforma de una empresa global ba
 * Licencias.
 * Developer tools.
 * Infraestructura quantum-ready.
+* Estrategia Cloud / Kubernetes / Serverless / Managed AI.
 
 Este plan no es solo código.
 
-Es estrategia, producto, mercado, empresa, posicionamiento y arquitectura de negocio.
+Es estrategia, producto, mercado, empresa, posicionamiento, arquitectura de negocio y criterio de plataforma.
 
 ---
 
 ## Proyectos
 
-| Proyecto | Nombre                           | Enfoque                                         |
-| -------- | -------------------------------- | ----------------------------------------------- |
-| 14       | `quantum-first-company-vision`   | Visión, misión, tesis e identidad               |
-| 15       | `enterprise-ai-product-line`     | Línea de productos IA vendibles                 |
-| 16       | `post-quantum-security-product`  | Producto empresarial de seguridad post-cuántica |
-| 17       | `quantum-optimization-services`  | Servicios de optimización quantum-ready         |
-| 18       | `quantum-developer-platform`     | Plataforma para desarrolladores quantum         |
-| 19       | `quantum-first-platform-roadmap` | Roadmap empresarial quantum-first               |
+| Proyecto | Nombre                           | Enfoque                                                           |
+| -------- | -------------------------------- | ----------------------------------------------------------------- |
+| 14       | `quantum-first-company-vision`   | Visión, misión, tesis e identidad                                 |
+| 15       | `enterprise-ai-product-line`     | Línea de productos IA vendibles                                   |
+| 16       | `post-quantum-security-product`  | Producto empresarial de seguridad post-cuántica                   |
+| 17       | `quantum-optimization-services`  | Servicios de optimización quantum-ready                           |
+| 18       | `quantum-developer-platform`     | Plataforma para desarrolladores quantum                           |
+| 19       | `quantum-first-platform-roadmap` | Roadmap empresarial con estrategia Cloud, Kubernetes y Managed AI |
 
 ---
 
@@ -538,27 +608,36 @@ Es estrategia, producto, mercado, empresa, posicionamiento y arquitectura de neg
 * Quantum Optimization Market.
 * Developer Ecosystem.
 * Platform Business.
+* Cloud Strategy.
+* Kubernetes Strategy.
+* Serverless Strategy.
+* Managed AI Platforms.
+* GKE / EKS / AKS conceptual.
+* Platform Operations.
+* Multi-cloud decision making.
 
 ---
 
 ## Nivel esperado al terminar Plan 3
 
-| Área                        |  Nivel |
-| --------------------------- | -----: |
-| Visión empresarial          |   9/10 |
-| Product Strategy            |   8/10 |
-| SaaS / Licencias            | 7.5/10 |
-| Developer Platform Thinking |   8/10 |
-| Enterprise Software         |   8/10 |
-| Go-to-market                |   7/10 |
-| Pricing                     |   7/10 |
-| Customer Discovery          | 7.5/10 |
-| ROI / Business Value        |   8/10 |
-| Quantum-first Positioning   |   9/10 |
-| Roadmap estratégico         |   9/10 |
-| Moat tecnológico            |   8/10 |
-| Platform Business           |   8/10 |
-| Storytelling fundador       |   9/10 |
+| Área                                     |  Nivel |
+| ---------------------------------------- | -----: |
+| Visión empresarial                       |   9/10 |
+| Product Strategy                         |   8/10 |
+| SaaS / Licencias                         | 7.5/10 |
+| Developer Platform Thinking              |   8/10 |
+| Enterprise Software                      |   8/10 |
+| Go-to-market                             |   7/10 |
+| Pricing                                  |   7/10 |
+| Customer Discovery                       | 7.5/10 |
+| ROI / Business Value                     |   8/10 |
+| Quantum-first Positioning                |   9/10 |
+| Roadmap estratégico                      |   9/10 |
+| Cloud / Kubernetes / Serverless Strategy |   8/10 |
+| Managed AI Platform Decision             |   8/10 |
+| Moat tecnológico                         |   8/10 |
+| Platform Business                        |   8/10 |
+| Storytelling fundador                    |   9/10 |
 
 ---
 
@@ -583,18 +662,20 @@ Plan 2 = entiendo y construyo prototipos cuánticos.
 Plan 4 = profundizo, comparo, optimizo y empiezo a diseñar plataforma cuántica real.
 ```
 
+En este plan Kubernetes vuelve a entrar al final, no como tema aislado, sino como capa de despliegue avanzado para una plataforma **AI + Quantum** modular.
+
 ---
 
 ## Proyectos
 
-| Proyecto | Nombre                                   | Enfoque                              |
-| -------- | ---------------------------------------- | ------------------------------------ |
-| 20       | `quantum-ml-model-zoo`                   | Model zoo de Quantum ML              |
-| 21       | `quantum-kernel-benchmark`               | Quantum kernels vs kernels clásicos  |
-| 22       | `vqe-qaoa-advanced-optimization`         | VQE, QAOA y optimizadores            |
-| 23       | `quantum-error-correction-basics`        | Ruido, errores y corrección cuántica |
-| 24       | `post-quantum-enterprise-migration-tool` | Migración post-cuántica empresarial  |
-| 25       | `quantum-ai-platform-prototype`          | Plataforma final AI + Quantum        |
+| Proyecto | Nombre                                   | Enfoque                                                   |
+| -------- | ---------------------------------------- | --------------------------------------------------------- |
+| 20       | `quantum-ml-model-zoo`                   | Model zoo de Quantum ML                                   |
+| 21       | `quantum-kernel-benchmark`               | Quantum kernels vs kernels clásicos                       |
+| 22       | `vqe-qaoa-advanced-optimization`         | VQE, QAOA y optimizadores                                 |
+| 23       | `quantum-error-correction-basics`        | Ruido, errores y corrección cuántica                      |
+| 24       | `post-quantum-enterprise-migration-tool` | Migración post-cuántica empresarial                       |
+| 25       | `quantum-ai-platform-prototype`          | Plataforma AI + Quantum modular con despliegue Kubernetes |
 
 ---
 
@@ -638,36 +719,46 @@ Plan 4 = profundizo, comparo, optimizo y empiezo a diseñar plataforma cuántica
 * Quantum Cost / Latency Benchmarking.
 * Developer Experience para quantum.
 * Research documentation.
+* Kubernetes AI + Quantum Platform Deployment.
+* Platform modular deployment.
+* Algorithm service.
+* Provider routing service.
+* Job worker service.
+* RAG research assistant service.
+* PQC readiness service.
+* Cost-latency service.
+* GKE / EKS / AKS conceptual mapping.
 
 ---
 
 ## Nivel esperado al terminar Plan 4
 
-| Área                             |  Nivel |
-| -------------------------------- | -----: |
-| Fundamentos cuánticos            | 8.5/10 |
-| Qiskit                           |   9/10 |
-| Cirq                             | 7.5/10 |
-| IBM Quantum                      | 7.5/10 |
-| Amazon Braket                    | 7.5/10 |
-| Azure Quantum                    | 7.5/10 |
-| Quantum Data Encoding            | 8.5/10 |
-| VQC                              |   8/10 |
-| QSVM                             |   8/10 |
-| Quantum Kernels                  | 8.5/10 |
-| Quantum ML                       |   8/10 |
-| VQE                              |   8/10 |
-| QAOA                             | 8.5/10 |
-| Variational Quantum Algorithms   | 8.5/10 |
-| Quantum Optimization             |   9/10 |
-| Noise / Error Mitigation         | 7.5/10 |
-| Quantum Error Correction básico  |   7/10 |
-| Post-Quantum Security            |   9/10 |
-| Hybrid Classical-Quantum Systems |   9/10 |
-| Quantum Cloud Abstraction        |   9/10 |
-| Quantum Platform Architecture    |   9/10 |
-| Quantum Developer Experience     | 8.5/10 |
-| Research Documentation           | 8.5/10 |
+| Área                                    |  Nivel |
+| --------------------------------------- | -----: |
+| Fundamentos cuánticos                   | 8.5/10 |
+| Qiskit                                  |   9/10 |
+| Cirq                                    | 7.5/10 |
+| IBM Quantum                             | 7.5/10 |
+| Amazon Braket                           | 7.5/10 |
+| Azure Quantum                           | 7.5/10 |
+| Quantum Data Encoding                   | 8.5/10 |
+| VQC                                     |   8/10 |
+| QSVM                                    |   8/10 |
+| Quantum Kernels                         | 8.5/10 |
+| Quantum ML                              |   8/10 |
+| VQE                                     |   8/10 |
+| QAOA                                    | 8.5/10 |
+| Variational Quantum Algorithms          | 8.5/10 |
+| Quantum Optimization                    |   9/10 |
+| Noise / Error Mitigation                | 7.5/10 |
+| Quantum Error Correction básico         |   7/10 |
+| Post-Quantum Security                   |   9/10 |
+| Hybrid Classical-Quantum Systems        |   9/10 |
+| Quantum Cloud Abstraction               |   9/10 |
+| Quantum Platform Architecture           |   9/10 |
+| Kubernetes AI + Quantum Platform Design | 7.5/10 |
+| Quantum Developer Experience            | 8.5/10 |
+| Research Documentation                  | 8.5/10 |
 
 ---
 
@@ -715,6 +806,8 @@ Contiene proyectos de:
 * Agentes.
 * Costos y latencia.
 * Plataforma final retail AI.
+* Cloud architecture.
+* Kubernetes aplicado a plataforma IA.
 
 ## `Quantum-AI`
 
@@ -729,6 +822,7 @@ Contiene proyectos de:
 * Optimización cuántica.
 * Seguridad post-cuántica.
 * Workflows híbridos.
+* Orquestación de jobs y workers.
 
 ## `Business-Quantum-First`
 
@@ -742,6 +836,7 @@ Contiene proyectos de:
 * Servicios de optimización.
 * Developer platform.
 * Roadmap global.
+* Estrategia Cloud / Kubernetes / Serverless / Managed AI.
 
 ## `Quantum-AI-Advanced`
 
@@ -756,6 +851,7 @@ Contiene proyectos de:
 * Error correction.
 * Migración post-cuántica empresarial.
 * Plataforma AI + Quantum.
+* Kubernetes aplicado a despliegue modular avanzado.
 
 ---
 
@@ -809,6 +905,9 @@ Sé detectar drift.
 Sé preparar retraining.
 Sé construir RAG y agentes.
 Sé medir costos y latencia.
+Sé trabajar con Cloud Run.
+Sé decidir cuándo usar Kubernetes.
+Sé diseñar plataformas multi-servicio.
 Sé entrar a computación cuántica aplicada.
 Sé construir prototipos Quantum AI.
 Sé pensar productos quantum-first.
@@ -844,4 +943,4 @@ IA real hoy → IA cuántica mañana → empresa quantum-first → plataforma AI
 **Jean Franck Loa Rojas**
 
 AI Engineer Path Builder
-Machine Learning • MLOps • RAG • Agents • Quantum AI • Quantum-First Strategy
+Machine Learning • MLOps • RAG • Agents • Cloud Architecture • Kubernetes • Quantum AI • Quantum-First Strategy
