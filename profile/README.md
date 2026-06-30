@@ -1,4 +1,4 @@
-# Path-AI-Engineer-2.0
+# Path-AI-Engineer
 
 ## 🧠 AI Engineer, Quantum AI, Robotics & Android Systems Roadmap
 
