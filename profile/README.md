@@ -344,14 +344,14 @@ Entender cómo aprenden las redes profundas antes de entrar a dominios grandes.
 
 ## Proyectos
 
-| Proyecto | Nombre                                  |  Duración | Tipo         | Enfoque                                |
-| -------: | --------------------------------------- | --------: | ------------ | -------------------------------------- |
-|       07 | `neural-network-from-scratch-lab`       | 3 semanas | Lab          | Red neuronal desde cero                |
-|       08 | `pytorch-regression-classification-api` | 3 semanas | Aplicado     | PyTorch para regresión y clasificación |
-|       09 | `cnn-foundations-image-classifier`      | 4 semanas | Lab aplicado | CNN básica para imágenes               |
-|       10 | `sequence-models-rnn-lstm-lab`          | 3 semanas | Lab          | RNN, LSTM y GRU                        |
-|       11 | `autoencoder-representation-lab`        | 4 semanas | Lab          | Autoencoders y representación          |
-|       12 | `transformer-from-scratch-mini-lab`     | 5 semanas | Lab avanzado | Transformer pequeño desde fundamentos  |
+| Proyecto | Nombre                                          |  Duración | Tipo         | Enfoque                                |
+| -------: | ----------------------------------------------- | --------: | ------------ | -------------------------------------- |
+|       07 | `neural-network-foundations-lab`                | 3 semanas | Lab          | Red neuronal desde cero                |
+|       08 | `pytorch-regression-classification-api`         | 3 semanas | Aplicado     | PyTorch para regresión y clasificación |
+|       09 | `cnn-foundations-image-classifier`              | 4 semanas | Lab aplicado | CNN básica para imágenes               |
+|       10 | `sequence-models-rnn-lstm-lab`                  | 3 semanas | Lab          | RNN, LSTM y GRU                        |
+|       11 | `autoencoder-representation-lab`                | 4 semanas | Lab          | Autoencoders y representación          |
+|       12 | `transformer-from-architecture-foundations-lab` | 5 semanas | Lab avanzado | Transformer pequeño desde fundamentos  |
 
 Duración total aproximada:
 
